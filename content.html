@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content</title>
   <link rel="icon" href="images/logo.png">
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -50,17 +52,17 @@
               <a href="announce.html"><span class="icon category" aria-hidden="true"></span>Announce</a>
             </li>
             <li>
-              <a href="following.html"><span class="icon user-3" aria-hidden="true"></span>Following</a>
+              <a href="feedback.html"><span class="icon folder" aria-hidden="true"></span>Feedback</a>
             </li>
             <li>
-              <a href="feedback.html"><span class="icon folder" aria-hidden="true"></span>Feedback</a>
+              <a href="about Us.html"><span class="icon user-3" aria-hidden="true"></span>About Us</a>
             </li>
         </div>
       </div>
     </aside>
     <div class="main-wrapper">
       <!-- ! Main nav -->
-      <nav class="main-nav--bg">
+      <nav class="main-nav-bg">
         <div class="container main-nav">
 
           <div class="main-nav-end">
@@ -73,36 +75,37 @@
       </nav>
       <!-- ! Main -->
       <main class="main users chart-page" id="skip-target">
-        <div class="container-lg page-center">
-          <div class="card text-center m-3 w-50">
+        <div class="container-lg page-center" >
+          <div class="card text-center m-3 w-80" data-aos="zoom-in-up" data-aos-duration="800">
             <div class="card-header">
               Hackathon คืออะไร?
             </div>
             <div class="card-body">
-              <img src="/images/whathackathon1.png" style="width: 50%;" alt="">
+              <img src="/images/whathackathon1.png" style="width: 20%; float: left; border-radius: 8px;" alt="">
+              <h4>⚙Hackathon คืออะไร ?</h4><br>
+              ในช่วงนี้หลายๆคนคงเคยได้ยินคำว่า "Hackathon" อยู่บ่อยครั้งเลย แต่ก็ไม่รู้ว่ามันคืออะไรกัน วันนี้พวกเราก็จะพาทุกคนไปทำความรู้จักและทำความเข้าใจกับ"Hackathon" ให้มากยิ่งขึ้นกัน ว่าแล้วก็ไปกันเลย!
+              <div style="text-align: right; position: absolute; bottom: 0; right: 0;" class="p-3">
+                <a href="https://www.facebook.com/223890846283611/posts/254490823223613/" target="_blank" class="text-black" >อ่านต่อ</a>
               </div>
-            <div class="card-footer text-muted">
-              <h4>⚙Hackathon คืออะไร ?</h4>
-                ในช่วงนี้หลายๆคนคงเคยได้ยินคำว่า "Hackathon" อยู่บ่อยครั้งเลย แต่ก็ไม่รู้ว่ามันคืออะไรกัน วันนี้พวกเราก็จะพาทุกคนไปทำความรู้จักและทำความเข้าใจกับ"Hackathon" ให้มากยิ่งขึ้นกัน ว่าแล้วก็ไปกันเลย!
-              <a href="https://www.facebook.com/223890846283611/posts/254490823223613/" target="_blank" class="text-black">อ่านต่อ</a>
             </div>
           </div>
 
-          <div class="card text-center m-3 w-50">
+          <div class="card text-center m-3 w-80" data-aos="zoom-in-up" data-aos-duration="1000">
             <div class="card-header">
               Sustainable Development Goals: SDGs
             </div>
             <div class="card-body">
-              <img src="/images/sdgs1.jpg" style="width: 20%;" alt="">
-              <img src="/images/sdgs2.jpg" style="width: 20%;" alt="">
-              <img src="/images/sdgs3.jpg" style="width: 20%;" alt="">
-              <img src="/images/sdgs4.jpg" style="width: 20%;" alt="">
-            </div>
-            <div class="card-footer text-muted">
-              <h4>SDGs ย่อมาจาก “Sustainable Development Goals” หรือชื่อภาษาไทยคือ “เป้าหมายการพัฒนาที่ยั่งยืน”</h4>
+              <img src="/images/sdgs1.jpg" style="width: 20%; border-radius: 8px;" alt="">
+              <img src="/images/sdgs2.jpg" style="width: 20%; border-radius: 8px;" alt="">
+              <img src="/images/sdgs3.jpg" style="width: 20%; border-radius: 8px;" alt="">
+              <img src="/images/sdgs4.jpg" style="width: 20%; border-radius: 8px;" alt="">
+              <br><br>
+              <h4>SDGs ย่อมาจาก “Sustainable Development Goals” หรือชื่อภาษาไทยคือ “เป้าหมายการพัฒนาที่ยั่งยืน”</h4><br>
               SDGs คือกรอบทิศทางการพัฒนาของโลกภายหลังปี 2015 ที่ประเทศไทยและประเทศสมาชิกสหประชาชาติรวมทั้งหมด 193 ประเทศ ได้ร่วมลงนามรับรองวาระการพัฒนาที่ยั่งยืนปี ค.ศ. 2030 เพื่อยกระดับคุณภาพชีวิต สร้างความเท่าเทียม ลดความเหลื่อมล้ำ ให้ทุกคนมีความเป็นอยู่ที่ดีขึ้น ซึ่งมีองค์ประกอบ 3 ด้าน ได้แก่ การเติบโตทางเศรษฐกิจ (economic growth) ความครอบคลุมทางสังคม (social inclusion) และการคุ้มครองสิ่งแวดล้อม (environmental protection)
-              SDGs มีเป้าหมายการพัฒนาที่ยั่งยืน 17 เป้าหมายด้วยกัน<br>
-              <a href="https://www.facebook.com/NGHhackathon" target="_blank" class="text-black">อ่านต่อ</a>
+              SDGs มีเป้าหมายการพัฒนาที่ยั่งยืน 17 เป้าหมายด้วยกัน
+              <div style="text-align: right; position: absolute; bottom: 0; right: 0;" class="m-3">
+                <a href="https://www.facebook.com/NGHhackathon" target="_blank" class="text-black">อ่านต่อ</a>
+              </div>
             </div>
           </div>
         </div>
@@ -113,6 +116,9 @@
   <script src="plugins/feather.min.js"></script>
   <!-- Custom scripts -->
   <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
