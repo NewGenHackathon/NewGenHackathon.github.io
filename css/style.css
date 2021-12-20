@@ -48,14 +48,20 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-@import url(../fonts/stylesheet.css);
+@font-face{
+  font-family: mali;
+  src: url(../fonts/Mali-Medium.ttf);
+}
 
 html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  font-family: mali;
 }
+
+
 
 /* Sections
    ========================================================================== */
@@ -77,6 +83,7 @@ body {
 
 main {
   display: block;
+  font-family: mali;
 }
 
 /**
@@ -206,6 +213,8 @@ sup {
 
 img {
   border-style: none;
+
+  
 }
 
 /* Forms
@@ -485,6 +494,7 @@ html {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  
 }
 
 .no-gutters {
@@ -585,8 +595,7 @@ html {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 .col {
@@ -741,6 +750,7 @@ ol {
 
 img {
   max-width: 100%;
+  
 }
 
 :focus {
@@ -971,105 +981,6 @@ body {
 
 .layer.active {
   display: block;
-}
-
-@font-face {
-  font-family: "demo";
-  font-display: swap;
-  src: url("../fonts/demo.woff") format("woff"),
-    url("../fonts/demo.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Black";
-  font-display: swap;
-  src: url("../fonts/Inter-Black.woff") format("woff"),
-    url("../fonts/Inter-Black.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-ExtraBold";
-  font-display: swap;
-  src: url("../fonts/Inter-ExtraBold.woff") format("woff"),
-    url("../fonts/Inter-ExtraBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Bold";
-  font-display: swap;
-  src: url("../fonts/Inter-Bold.woff") format("woff"),
-    url("../fonts/Inter-Bold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Light";
-  font-display: swap;
-  src: url("../fonts/Inter-Light.woff") format("woff"),
-    url("../fonts/Inter-Light.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-ExtraLight";
-  font-display: swap;
-  src: url("../fonts/Inter-ExtraLight.woff") format("woff"),
-    url("../fonts/Inter-ExtraLight.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Regular";
-  font-display: swap;
-  src: url("../fonts/Inter-Regular.woff") format("woff"),
-    url("../fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Medium";
-  font-display: swap;
-  src: url("../fonts/Inter-Medium.woff") format("woff"),
-    url("../fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-SemiBold";
-  font-display: swap;
-  src: url("../fonts/Inter-SemiBold.woff") format("woff"),
-    url("../fonts/Inter-SemiBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "stylesheet";
-  font-display: swap;
-  src: url("../fonts/stylesheet.woff") format("woff"),
-    url("../fonts/stylesheet.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Inter-Thin";
-  font-display: swap;
-  src: url("../fonts/Inter-Thin.woff") format("woff"),
-    url("../fonts/Inter-Thin.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
 }
 
 /* Basic config for all custom icons: */
@@ -3757,6 +3668,7 @@ label {
     -ms-flex: 0 0 58.33333%;
     flex: 0 0 58.33333%;
     max-width: 58.33333%;
+    
   }
 
   .col-md-8 {
