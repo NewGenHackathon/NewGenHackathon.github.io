@@ -73,6 +73,7 @@ html {
 body {
   margin: 0;
   background-image: url("../images/backround.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -213,9 +214,14 @@ sup {
 
 img {
   border-style: none;
-
-  
+  transition:transform 0.25s ease;
 }
+
+img:hover {
+  -webkit-transform:scale(1.10); /* or some other value */
+  transform:scale(1.10);
+}
+
 
 /* Forms
    ========================================================================== */
