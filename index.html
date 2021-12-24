@@ -146,7 +146,7 @@
     var date1 = Date.now();
     var date2 = new Date(2022, 01, 01);
     var diff = new Date(date2 - date1);
-    document.getElementById('alert').innerHTML=diff.getUTCDate()- 1+' วัน '+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
+    document.getElementById('alert').innerHTML=diff.getUTCDate()- 1+' วัน '+'<br>'+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
   }
   setInterval(time);
   </script>
