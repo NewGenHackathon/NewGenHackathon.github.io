@@ -1,0 +1,19 @@
+.glide__slide img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.glide__slide img:hover{
+    transform: none;
+}
+
+.glide__slide{
+    filter: blur(4px);
+    opacity: .7;
+    transition: .3s linear;
+}
+
+.glide__slide--active{
+    opacity: 1;
+    filter: none;
+}
