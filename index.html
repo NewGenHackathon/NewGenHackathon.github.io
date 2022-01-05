@@ -80,6 +80,7 @@
       <main class="main users chart-page" id="skip-target">
         <div class="container">
           <img class="center" alt="logo" src="images/logo.png" style="width: 45%;" data-aos="fade-up"data-aos-duration="300">
+          <h3 class="text-center" style="color: orange;">เหลือเวลาในการรับสมัคร</h3><br>
           <button class="center alert" id="alert">Coming Soon</button>
           <!-- <a href="###">
             <button class="center btn" data-aos="fade-up"data-aos-duration="300">สมัครเข้าร่วม</button>
@@ -90,12 +91,16 @@
             <a class="col-md-6 col-sm-6"><img class="zoomhome" alt="logo" src="images/poster1.jpg" data-aos="fade-up"data-aos-duration="1000"></a>
           </div> -->
         </div>
-        <a href="https://docs.google.com/forms/d/1l9ySfI044q_GC1Bx3hPstK8RPltHtlpzOPPjYvllNW4/viewform?pli=1&pli=1&edit_requested=true&fbclid=IwAR1AfADPGyEI28W7jpMYkJg7EwcZkjiqNWfkuKeYrvoPriPkvXA4R6Jy7fM&edit_requested=true" target="_blank" class="btn bd center w-25">สมัครเข้าร่วม</a>
+        <div class="container ">
+          <a href="https://docs.google.com/forms/d/1l9ySfI044q_GC1Bx3hPstK8RPltHtlpzOPPjYvllNW4/viewform?pli=1&pli=1&edit_requested=true&fbclid=IwAR1AfADPGyEI28W7jpMYkJg7EwcZkjiqNWfkuKeYrvoPriPkvXA4R6Jy7fM&edit_requested=true" target="_blank" class="btn bd center">สมัครเข้าร่วม</a>
         <br><br>
+        </div>
         <div class="container" data-aos="zoom-in-up" data-aos-duration="800">
           <div class="glide w-100">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
+                <li class="glide__slide"><a href="https://www.facebook.com/223890846283611/posts/311937754145586/?sfnsn=mo" target="_blank"><img src="images/poster6.jpg" style="width: 72%;" class="center"></a></li>
+                <li class="glide__slide"><img src="images/poster5.jpg"></a></li>
                 <li class="glide__slide"><a href="https://web.facebook.com/NGHhackathon/posts/304720161534012?_rdc=1&_rdr" target="_blank"><img src="images/poster4.jpg"></a></li>
                 <li class="glide__slide"><a href="https://docs.google.com/spreadsheets/d/1-P_nNGVk1J-AiOQKBHxcZJxS04OXjLlCPewwCGiTUbk/edit?usp=sharing" target="_blank"><img src="images/poster3.jpg"></a></li>
                 <li class="glide__slide"><a href="https://web.facebook.com/NGHhackathon/posts/268212968518065" target="_blank"><img src="images/poster2.jpg"></a></li>
@@ -148,13 +153,13 @@
   </script>
 
   <script>
-  function time(){
-    var date1 = Date.now();
-    var date2 = new Date(2022, 01, 01);
-    var diff = new Date(date2 - date1);
-    document.getElementById('alert').innerHTML=diff.getUTCDate()- 1+' วัน '+'<br>'+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
-  }
-  setInterval(time);
+    function time(){
+      var date1 = Date.now();
+      var date2 = new Date(2022, 01, 21);
+      var diff = new Date(date2 - date1);
+      document.getElementById('alert').innerHTML=diff.getUTCDate()- 1+' วัน '+'<br>'+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
+    }
+    setInterval(time);
   </script>
   <script src="/js/zoom.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
