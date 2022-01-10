@@ -93,8 +93,8 @@
         </div>
         <div class="container ">
           <a href="https://docs.google.com/forms/d/1l9ySfI044q_GC1Bx3hPstK8RPltHtlpzOPPjYvllNW4/viewform?pli=1&pli=1&edit_requested=true&fbclid=IwAR1AfADPGyEI28W7jpMYkJg7EwcZkjiqNWfkuKeYrvoPriPkvXA4R6Jy7fM&edit_requested=true" target="_blank" class="btn bd center">สมัครเข้าร่วม</a>
-        <br><br>
         </div>
+        <br><br>
         <div class="container" data-aos="zoom-in-up" data-aos-duration="800">
           <div class="glide w-100">
             <div class="glide__track" data-glide-el="track">
@@ -115,6 +115,12 @@
               <button class="glide__arrow glide__arrow--right" data-glide-dir=">">▷</button>
             </div>
           </div>
+        </div>
+        <br><br>
+        <div class="container" data-aos="zoom-in-up" data-aos-duration="800">
+          <video id="video" class="center" width="100%" height="100%" autoplay style="border-radius: 10px;">
+            <source src="/video/ngh_video.mp4" type="video/mp4" onclick="playPause()">
+          </video><br>
         </div>
       </main>
       <footer class="d-flex  justify-content-between align-items-center border-top" style="background-color: azure;">
@@ -180,6 +186,18 @@
     }
     new Glide('.glide', config).mount()
   </script>
-</body>
+  <script>
+    var videoPlayer = document.getElementById('video');
 
+    videoPlayer.addEventListener('click', function () {
+      if (videoPlayer.paused == false) {
+        videoPlayer.pause();
+        videoPlayer.firstChild.nodeValue = 'Play';
+      } else {
+        videoPlayer.play();
+        videoPlayer.firstChild.nodeValue = 'Pause';
+      }
+    });
+  </script>
+</body>
 </html>
