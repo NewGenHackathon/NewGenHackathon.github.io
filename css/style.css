@@ -1081,6 +1081,12 @@ body {
   background-image: url(../img/svg/Bulk/Paper-white.svg);
 }
 
+.target {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/svg/Bulk/bullseye.svg);
+}
+
 .message {
   background-image: url(../img/svg/Bulk/Message-white.svg);
   width: 24px;
