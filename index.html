@@ -84,17 +84,18 @@
         <div class="container">
           <img class="center" alt="logo" src="images/logo.png" style="width: 45%;" data-aos="fade-up"data-aos-duration="300">
           <h3 class="text-center" style="color: orange;">เหลือเวลาในการรับสมัคร</h3><br>
-          <button class="center alert" id="alert">Coming Soon</button>
+          <!-- <button class="center alert" id="alert">Coming Soon</button> -->
+          <button class="center alert" id="alert">ปิดรับสมัคร</button>
         </div>
         <div class="container ">
-          <a href="https://docs.google.com/forms/d/1l9ySfI044q_GC1Bx3hPstK8RPltHtlpzOPPjYvllNW4/viewform?pli=1&pli=1&edit_requested=true&fbclid=IwAR1AfADPGyEI28W7jpMYkJg7EwcZkjiqNWfkuKeYrvoPriPkvXA4R6Jy7fM&edit_requested=true" target="_blank" class="btn bd center">สมัครเข้าร่วม</a>
+          <a href=""class="btn bd center" >สมัครเข้าร่วม</a>
         </div>
         <br><br>
         <div class="container" data-aos="zoom-in-up" data-aos-duration="800">
           <div class="glide w-100">
             <div class="glide__track" data-glide-el="track">
               <ul class="glide__slides">
-                <li class="glide__slide"><img src="images/1dayleft2.jpg"></li>
+                <li class="glide__slide"><img src="images/closeday2.jpg"></li>
                 <li class="glide__slide"><a href="https://www.facebook.com/NGHhackathon/photos/a.247866467219382/325459769460051/" target="_blank"><img src="images/poster7.jpg" class="center"></a></li>
                 <li class="glide__slide"><img src="images/3word.jpg" style="width: 71%;" class="center"></a></li>
                 <li class="glide__slide"><img src="images/poster5.jpg"></li>
@@ -156,7 +157,7 @@
       var date1 = Date.now();
       var date2 = new Date(2022, 01, 15);
       var diff = new Date(date2 - date1);
-      document.getElementById('alert').innerHTML=diff.getUTCDate()+' วัน '+'<br>'+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
+      //document.getElementById('alert').innerHTML=diff.getUTCDate()+' วัน '+'<br>'+diff.getUTCHours()+' : '+diff.getMinutes()+' : '+diff.getSeconds();
       
     }
     setInterval(time);
