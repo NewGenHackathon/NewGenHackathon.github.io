@@ -80,10 +80,18 @@
       </nav>
       <!-- ! Main -->
       <main class="page-center" id="skip-target">
+        
         <!-- code -->
         <h1 class="center title">ประมวลภาพหลังจากจบโครงการ</h1>
         <img src="/images/logo.png" style="width: 20%;" alt="" data-aos="zoom-in-up" data-aos-duration="300">
         <br>
+
+        <div class="container">
+          <video id="video" class="center" width="100%" height="100%" autoplay style="border-radius: 10px;">
+            <source src="/video/ngh_video2.mp4" type="video/mp4" onclick="playPause()">
+          </video><br>
+        </div>
+
         <div class="container" >
 	
           <div class="feature" data-aos="zoom-in-up" data-aos-duration="600">
@@ -387,6 +395,20 @@
     AOS.init();
   </script>
   <script src="./js/js-feedback.js"></script>
+
+  <script>
+    var videoPlayer = document.getElementById('video');
+
+    videoPlayer.addEventListener('click', function () {
+      if (videoPlayer.paused == false) {
+        videoPlayer.pause();
+        videoPlayer.firstChild.nodeValue = 'Play';
+      } else {
+        videoPlayer.play();
+        videoPlayer.firstChild.nodeValue = 'Pause';
+      }
+    });
+  </script>
 </body>
 
 </html>
